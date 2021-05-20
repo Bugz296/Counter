@@ -1,0 +1,29 @@
+#main-container{
+    font-family: Arial;
+    text-align: center;
+    width: 700px;
+    height: 700px;
+    margin: auto;
+}
+    #main-container h3{
+        padding: 10px;
+        border: 1px solid black;
+        display: inline;
+    }
+    #main-container a{
+        display: inline;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+
+.btn{
+    border: 1px solid blue;
+    border-bottom: 1px solid blue;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px #039cbc;
+}
+    .btn:hover{
+        cursor: pointer;
+        box-shadow: 0 0 5px #81e7fc;
+    }
