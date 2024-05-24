@@ -24,20 +24,20 @@ app.set('views', (__dirname+'/views'));
 app.set('view engine', 'ejs');
 // root route to render the index.ejs view
 
-app.get('/', function(req, res) {
+app.get('/assignments/counter/', function(req, res) {
     /* Ensures that it has value when page is loaded for the first time */
     if(!req.session.count){
         req.session.count = 0;
     }
     res.render("index", {session: req.session.count++});
 });
-app.get('/add', function(req, res) {
+app.get('/assignments/counter/add', function(req, res) {
     req.session.count += 1;
-    res.redirect('/');
+    res.redirect('/assignments/counter/');
 });
-app.get('/reset', function(req, res) {
+app.get('/assignments/counter/reset', function(req, res) {
     req.session.count = 0;
-    res.redirect('/');                                      
+    res.redirect('/assignments/counter/');                                      
 });
 
 // tell the express app to listen on port 3001
