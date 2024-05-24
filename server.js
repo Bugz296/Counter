@@ -40,7 +40,5 @@ app.get('/reset', function(req, res) {
     res.redirect('/');                                      
 });
 
-// tell the express app to listen on port 8000
-app.listen(8000, function() {
-    console.log("listening on port 8000");
-});
+// tell the express app to listen on port 3001
+app.listen(3001);
